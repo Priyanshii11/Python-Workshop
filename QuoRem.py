@@ -1,0 +1,5 @@
+ x = input("enter the Divisor =")
+y = input("enter the dividend =")
+quo = int(x) / int(y)
+rem = int(x) % int(y)
+print("Quotient is = ",quo,"Remainder = ",rem)

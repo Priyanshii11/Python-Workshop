@@ -1,0 +1,5 @@
+print("Addition of two number")
+x =input("First Number : ")
+y =input("Second number : ")
+total= int(x)+int(y)
+print("addition of two number of" , x , " and " ,y ,"is",total)
