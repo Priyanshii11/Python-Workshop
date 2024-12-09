@@ -68,7 +68,7 @@ lst =[1,3,5,'ram', [1,2,3]]
 def DType(item):
     return type(item)
 y = map(DType , lst)
-print(list(y))'''
+print(list(y))
 
 lst =[1,2,3,4,5,7]
 def DType(item):
@@ -78,7 +78,8 @@ y = map(DType, lst)
 x = i for i in y if i is not None # Exclude None values
 print(x)
 
-'''lst = ['Ram','Sita','Mohan','Rashmi']
+
+lst = ['Ram','Sita','Mohan','Rashmi']
 x=list(filter (lambda x: len(x)>4 , lst))
 print(x)
 
@@ -127,8 +128,36 @@ y=reduce(add,lst)
 print(y//5)'''
 
 
+Str3=[]
+String=input("str: ")
+S=sorted(String)
+val = len(S)
+for i in range(0,val):
+    if i not in Str3:
+        Str3.append(i)
+        count=1
+        for j in range(i+1,val):
+             if(S[i]==S[j]):
+                count = count+1
+        Str3.append(S[i])
+        print(f"'{S[i]}'\t{count}")
+print(Str3)
+'''
+Str = "Hello Python"
+S = sorted(Str)  # Sort the string characters
+Str3 = []  # To store distinct characters
+count_dict = {}  # Dictionary to store counts of characters
 
+for char in S:  # Iterate through sorted string
+    if char not in Str3:  # If the character is not already in Str3
+        Str3.append(char)  # Add the character to distinct list
+        count = 0  # Initialize count for the character
+        for c in S:  # Count occurrences of the character
+            if c == char:
+                count += 1
+        count_dict[char] = count  # Store the count in dictionary
 
-
-
+# Display the results
+for char, count in count_dict.items():
+    print(f"'{char}':{count}")'''
 

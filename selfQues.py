@@ -35,11 +35,11 @@ num=50
 sum1 =0
 for i in range(1,num+1):
     sum1 = sum1+i
-print(sum1,end=" ")'''
+print(sum1,end=" ")
 
 #armstrong number
 num = 153
-a=num
+a=num 
 l = len(str(num))
 val =0 
 while(num >0):
@@ -53,3 +53,46 @@ else:
     print("Not an Armstrong number")
      
 
+#Disarium number
+num = 175
+l = str(num)
+length=len(l)
+val =0 
+for i in range(length):
+     val = val + int(l[i])**(i+1)
+print(val)
+if(num==val):
+    print("Disarium number")
+else:
+    print(" notDisarium number")
+    
+  
+#Harshad number
+num = int(input("enter the number "))
+a = num 
+val =0 
+while(num >0):
+     rem = num%10
+     num = num//10
+     val = rem +val
+print(val)
+if(a%val==0):
+    print("harshad number")
+else:
+    print("Not Harshad number ")
+
+
+#fibonacci    
+num = 10  # Number of terms in the Fibonacci sequence
+a, b = 0, 1  # First two numbers of the Fibonacci sequence
+i = 0
+
+while i < num:
+    print(a, end=" ")  # Print the current number (a)
+    a, b = b, a + b  # Update a and b
+    i += 1'''
+
+
+     
+
+    

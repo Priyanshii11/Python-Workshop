@@ -5,6 +5,7 @@ if(num1==num2):
     print("Same number")
 else:
     print("Not Same number")
+    
 '32'
 num1=int(input("enter the number :"))
 if num1 > 0:

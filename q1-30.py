@@ -42,6 +42,7 @@ print("Remainder is" ,a%b)
 print(f"Exponential is", a**b)
 
 '16'
+
 a=int(input("enter the value of a : " ))
 b=int(input("enter the value of b: "))
 print("a is smalleer than b", a<b)
@@ -53,6 +54,7 @@ print("a is not equal to b" ,a!=b)'''
 
 '17'
 
+'''
 a=int(input("enter the value of a : " ))
 b=int(input("enter the value of b: ")) 
 a+=b
@@ -68,5 +70,5 @@ print("Floor is", a)
 a%=b
 print("Remainder is" ,a)
 a**=b
-print(f"Exponential is", a)
+print(f"Exponential is", a)'''
 
