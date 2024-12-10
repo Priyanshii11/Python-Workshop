@@ -56,7 +56,7 @@ print(s)
 f.close()'''
 
 #write operaation
-f=open("C:\\Users\\hp\\OneDrive\\Desktop\\Hello.txt","w")
+'''f=open("C:\\Users\\hp\\OneDrive\\Desktop\\Hello.txt","w")
 f.write(" Hello again")
 f.close()
 
@@ -64,3 +64,46 @@ f=open("C:\\Users\\hp\\OneDrive\\Desktop\\Hello.txt","r")
 s=f.read()
 print(s)
 f.close()
+'''
+
+#write list into file
+'''l=['ram','hello','bye']
+f=open("C:\\Users\\hp\\OneDrive\\Desktop\\Hello.txt","w")
+f.writelines(l)
+f.close()
+
+f=open("C:\\Users\\hp\\OneDrive\\Desktop\\Hello.txt","r")
+s=f.read()
+print(s)
+f.close()'''
+
+#copy from one file to another
+'''f=open("C:\\Users\\hp\\OneDrive\\Desktop\\Hello.txt","r")
+S=f.read()
+f2=open("C:\\Users\\hp\\OneDrive\\Desktop\\hello2.txt","w")
+f2.write(S)
+f.close()
+f2.close()
+f=open("C:\\Users\\hp\\OneDrive\\Desktop\\hello2.txt","r")
+s=f.read()
+print(s)
+f.close()'''
+
+#copy from two file into third file
+'''f=open("C:\\Users\\hp\\OneDrive\\Desktop\\Hello.txt","r")
+S=f.read()
+f2=open("C:\\Users\\hp\\OneDrive\\Desktop\\hello2.txt","r")
+S2=f2.read()
+f3=open("C:\\Users\\hp\\OneDrive\\Desktop\\h3.txt","a")
+f3.write(S +" "+ S2)
+f.close()
+f2.close()
+f3.close()
+f4=open("C:\\Users\\hp\\OneDrive\\Desktop\\h3.txt","r")
+s=f4.read()
+print(s)
+f4.close()'''
+
+#Exception handling
+
+
