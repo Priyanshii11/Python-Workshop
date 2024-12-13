@@ -445,7 +445,7 @@ print(obj1)'''
 b=employe()
 print(b)'''
 
-class distance():
+'''class distance():
     def __init__(self,x,y):
         self.i =y
         self.f=x
@@ -453,14 +453,139 @@ class distance():
         temft=self.f+oth.f
         temin=self.i+oth.i
         if(temin>=12):
-            x=temin-12
-            temin=x
-            temft +=1 
-          
+            r=temin%12
+            q=temin//12
+            temft=temft+q
+            temin=r
+            return distance(temft,temin)
+    def __str__ (self):
+        return "ft{} in{}".format(self.f,self.i)
 obj=distance(9,5)
 obj2=distance(10,9)
-print(distance.temft)
-print(distance.teminc)
+d3=obj+obj2
+print(d3)'''
 
+
+'''class Complex():
+    def __init__(self,x,y):
+        self.num =x
+        self.im=y
+    def __add__(self,oth):
+        temnum=self.num+oth.num
+        temim=self.im+oth.im
+        return Complex(temnum,temim)
+    def __str__ (self):
+        return "natural number={} imaginary ={}i".format(self.num,self.im)
+obj=Complex(9,5)
+obj2=Complex(10,9)
+d3=obj+obj2
+print(d3)'''
+
+##check time
+'''class Time():
+    def __init__(self,x,y):
+        self.min=y
+        self.sec=y
+    def __add__(self,oth):
+        temmin=self.min+oth.min
+        temsec=self.sec+oth.sec
+        if(temsec>=60):
+            r=temsec%60
+            q=temsec//60
+            temmin=temmin+q
+            temsec=r
+            return Time(temmin,temsec)
+    def __str__ (self):
+        return "min {} sec {}".format(self.min,self.sec)
+obj=Time(5,55)
+obj2=Time(10,45)
+d3=obj+obj2
+print(d3)'''
+
+#find which one is greaterr
+'''class distance():
+    def _init_(self,x,y):
+        self.x=x
+        self.y=y
+    def _ge_(self,oth):
+        g1=self.x+oth.y/12
+        g2=self.x+oth.y/12
+        if(g1>g2):
+            return True
+        else:
+            return False
+
+d1=distance(10,5)#self
+d2=distance(15,9)#other
+d3=d1>=d2
+print(d3)'''
+
+'''#inheritence
+class father:
+    money=1000
+    def show(self):
+        print("Father class")
+    @classmethod
+    def showmoney(cls):
+        print("Money show",cls.money)
+    @staticmethod
+    def stat():
+        a=10
+        print("Static method",a)
+class son(father):
+    def display(self):
+        print("Child class inheritance")
+a=son()
+a.display()
+a.show()
+a.showmoney()
+a.stat()'''
+
+#constructor overriding
+'''class person:
+    def __init__(self):
+        self.name='santosh'
+        print(self.name)
+class student(person): 
+    def __init__(self):
+        print("hi")
+S=student()'''
+
+
+
+
+'''class person:
+    def __init__(self):
+        self.name='santosh'
+        print(self.name)
+class student(person):
+    def display(self):
+        print("hi")
+S=student()
+
+
+class person:
+    def __init__(self):
+        self.name='santosh'
+        print(self.name)
+    def display(self):
+        print("hello")
+class student(person):
+    def display(self):
+        print("hi")
+s=student()
+s.display()'''
+
+
+class father():
+    def __init__(self):
+        self.money=2000
+        print("father clss constructor")
+class son():
+    def __init__(self):
+        self.money =5000
+        print("son class constructor")
+    def display(self):
+        print(self.money)
+s=son()
     
-
